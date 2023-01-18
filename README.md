@@ -1,2 +1,3 @@
-# sevastyanov_chess
-The chess engine for sevastyanov - written in Elixir
+# Sevastyanov Chess
+
+A chess engine for [Sevastyanov](http://github.com/gordonguthrie/sevastyanov.git) written in Elixir.
