@@ -55,7 +55,9 @@ defmodule SevastyanovChess.Chess do
   end
 
   defp apply_board([], rest, _n, acc) do
-   List.flatten(Enum.reverse([rest | acc]))
+   rawboard = List.flatten(Enum.reverse([rest | acc]))
+   # I know, using Erlang functions my bad
+   :unicode.characters_to_binary(:io_lib.format(rawboard, []))
   end
   defp apply_board([{loc, piece} | t], board, n, acc) do
     {newacc, [_replaced | tail]} = Enum.split(board, loc - n - 1)
