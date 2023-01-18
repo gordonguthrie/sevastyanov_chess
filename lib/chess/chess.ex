@@ -51,9 +51,7 @@ defmodule SevastyanovChess.Chess do
     blank = blank_board()
     newboard = format_board(board, @emptyaccumulator)
     initialoffset = 0
-    b = apply_board(newboard, blank, initialoffset, @emptyaccumulator)
-    :io.format(b, [])
-    :ok
+    apply_board(newboard, blank, initialoffset, @emptyaccumulator)
   end
 
   defp apply_board([], rest, _n, acc) do
