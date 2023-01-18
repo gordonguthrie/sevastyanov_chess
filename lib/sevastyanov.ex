@@ -1,6 +1,6 @@
-defmodule Sevastyanov do
+defmodule SevastyanovChess do
   @moduledoc """
-  Documentation for `Sevastyanov`.
+  Documentation for `SevastyanovChess`.
   """
 
   @doc """

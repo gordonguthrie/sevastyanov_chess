@@ -1,9 +1,9 @@
-defmodule Sevastyanov.MixProject do
+defmodule SevastyanovChess.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :sevastyanov,
+      app: :sevastyanov_chess,
       version: "0.1.0",
       elixir: "~> 1.13",
       start_permanent: Mix.env() == :prod,
